@@ -894,3 +894,9 @@ h3,.hero-trust b,.hero-trust small,.gem .meta{text-wrap:balance}
 /* 11/5: phone overflow on /aframs-site-preview/diamond-education/ */
 .c4 .wrap > *, .c4 .rv, .viz, .cscale{min-width:0}
 @media (max-width:760px){.loupes{grid-template-columns:repeat(3,1fr) !important}}
+/* 320px phones: long headings were forcing the page wider than the screen */
+@media (max-width:360px){
+  .wrap>*,.svc>*{min-width:0}
+  h2,h3,p,li,.lede{overflow-wrap:anywhere}
+  .steps,.steps *{min-width:0}
+}
