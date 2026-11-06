@@ -576,7 +576,7 @@ footer a:hover{color:var(--gold)}
 }
 @media (max-width:760px){
   .phero{min-height:auto;background:#fff}
-  .phero picture{width:100%}
+  .phero picture{width:100%;height:auto;aspect-ratio:12/7;max-height:36svh;min-height:150px}   /* same band as the home slides */
   .phero picture img{object-position:var(--mpos,var(--pos,50% 50%));-webkit-mask-image:none;mask-image:none}
   .phero h1{font-size:clamp(1.3rem,6.6vw,1.75rem);margin:.5rem 0 .6rem}
   .crumbs{justify-content:center;font-size:.84rem}
@@ -874,9 +874,12 @@ h3,.hero-trust b,.hero-trust small,.gem .meta{text-wrap:balance}
 @keyframes tabfill{to{width:100%}}
 @media (min-width:761px) and (max-width:1100px) and (orientation:portrait){.hero-show .slides{position:relative;width:100%;height:40svh;min-height:320px}.hero-show .slide img{-webkit-mask-image:none;mask-image:none}.slide-tabs{justify-content:center}}
 @media (max-width:760px){
-  .hero-show .slides{position:relative;width:100%;height:23svh;min-height:150px}
+  /* 12:7 = the phone slide canvases, so each shows whole (was 23svh: about 150px on a real iPhone, a strip that clipped every photo) */
+  .hero-show .slides{position:relative;width:100%;height:auto;aspect-ratio:12/7;max-height:36svh;min-height:150px}
   .hero-show .slide.side{left:0}
   .hero-show .slide img,.hero-show .slide.side img{object-position:var(--mpos,var(--pos));-webkit-mask-image:none;mask-image:none}
+  /* the ring is the one real photo: melt its edges into the paper so there is no line under it or against the nav */
+  .hero-show .slide:first-child img{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 10%,#000 84%,transparent);mask-image:linear-gradient(180deg,transparent 0,#000 10%,#000 84%,transparent)}
   .slide-tabs{justify-content:center;gap:.3rem 1rem;margin-top:1rem}
   .slide-tabs a{font-size:.85rem;padding-bottom:.4rem}
 }
@@ -888,6 +891,6 @@ h3,.hero-trust b,.hero-trust small,.gem .meta{text-wrap:balance}
 .hero-one h1{text-wrap:nowrap}
 .hero-one .hero-copy{max-width:720px}
 
-/* 11/5: phone overflow on /diamond-education/ */
+/* 11/5: phone overflow on /aframs-site-preview/diamond-education/ */
 .c4 .wrap > *, .c4 .rv, .viz, .cscale{min-width:0}
 @media (max-width:760px){.loupes{grid-template-columns:repeat(3,1fr) !important}}
