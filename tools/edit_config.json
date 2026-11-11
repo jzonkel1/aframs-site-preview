@@ -1,0 +1,964 @@
+{
+ "base": "",
+ "css": "css/site.css",
+ "hours_js": [
+  "js/site.js"
+ ],
+ "kick_html": "<span class=\"rule\"></span>",
+ "colors": {
+  "ink": "#152237",
+  "paper": "#f4f0e6"
+ },
+ "hours_default": {
+  "monday": null,
+  "tuesday": [
+   10,
+   18
+  ],
+  "wednesday": [
+   10,
+   18
+  ],
+  "thursday": [
+   10,
+   18
+  ],
+  "friday": [
+   10,
+   18
+  ],
+  "saturday": [
+   10,
+   18
+  ],
+  "sunday": null
+ },
+ "hours_phrases": {
+  "days_long": "Tuesday to Saturday",
+  "days_short": "Tue to Sat",
+  "time_short": "10 to 6",
+  "time_long": "10 AM to 6 PM",
+  "closed": "Sunday and Monday"
+ },
+ "pages": {
+  "home": {
+   "label": "Home page",
+   "html": "index.html",
+   "slots": {
+    "family": {
+     "files": [
+      {
+       "file": "img/family.jpg",
+       "w": 960,
+       "h": 637
+      }
+     ],
+     "default": "/img/family.jpg",
+     "alt": "The Afram's Jewelers family inside the store at Christmas",
+     "label": "The Afram's Jewelers family inside the store at Christmas",
+     "also": []
+    },
+    "svc_bridal": {
+     "files": [
+      {
+       "file": "img/svc-bridal.jpg",
+       "w": 600,
+       "h": 600
+      }
+     ],
+     "default": "/img/svc-bridal.jpg",
+     "alt": "Oval diamond engagement ring with a double halo",
+     "label": "Oval diamond engagement ring with a double halo",
+     "also": []
+    },
+    "svc_repair": {
+     "files": [
+      {
+       "file": "img/svc-repair.jpg",
+       "w": 450,
+       "h": 450
+      }
+     ],
+     "default": "/img/svc-repair.jpg",
+     "alt": "Ring being repaired at the bench",
+     "label": "Ring being repaired at the bench",
+     "also": [
+      "Estate jewelry page",
+      "Ring repair page",
+      "Watch repair page",
+      "We buy gold page"
+     ]
+    },
+    "svc_sizing": {
+     "files": [
+      {
+       "file": "img/svc-sizing.jpg",
+       "w": 450,
+       "h": 450
+      }
+     ],
+     "default": "/img/svc-sizing.jpg",
+     "alt": "Diamond ring being polished",
+     "label": "Diamond ring being polished",
+     "also": [
+      "Diamond education page",
+      "Engagement rings page",
+      "Estate jewelry page",
+      "Jewelry repair page",
+      "Watch repair page"
+     ]
+    },
+    "svc_watch": {
+     "files": [
+      {
+       "file": "img/svc-watch.jpg",
+       "w": 450,
+       "h": 450
+      }
+     ],
+     "default": "/img/svc-watch.jpg",
+     "alt": "Watch movement being repaired",
+     "label": "Watch movement being repaired",
+     "also": [
+      "Jewelry repair page",
+      "Seiko watches page"
+     ]
+    },
+    "svc_appraisal": {
+     "files": [
+      {
+       "file": "img/svc-appraisal.jpg",
+       "w": 480,
+       "h": 480
+      }
+     ],
+     "default": "/img/svc-appraisal.jpg",
+     "alt": "Vintage cameo brooches",
+     "label": "Vintage cameo brooches",
+     "also": []
+    },
+    "svc_seiko": {
+     "files": [
+      {
+       "file": "img/svc-seiko.jpg",
+       "w": 800,
+       "h": 800
+      }
+     ],
+     "default": "/img/svc-seiko.jpg",
+     "alt": "Seiko 5 Sports SRPL85 automatic watch with a black dial and steel bracelet",
+     "label": "Seiko 5 Sports SRPL85 automatic watch with a black dial and steel bracelet",
+     "also": [
+      "Seiko watches page"
+     ]
+    },
+    "svc_gold": {
+     "files": [
+      {
+       "file": "img/svc-gold.jpg",
+       "w": 600,
+       "h": 600
+      }
+     ],
+     "default": "/img/svc-gold.jpg",
+     "alt": "Gold cuban link chains on a display bust",
+     "label": "Gold cuban link chains on a display bust",
+     "also": [
+      "Estate jewelry page",
+      "Jewelry page",
+      "Jewelry appraisals page",
+      "Seiko watches page"
+     ]
+    },
+    "heirloom": {
+     "files": [
+      {
+       "file": "img/heirloom.jpg",
+       "w": 1080,
+       "h": 1080
+      }
+     ],
+     "default": "/img/heirloom.jpg",
+     "alt": "Gold rings resting in an open jewelry box",
+     "label": "Gold rings resting in an open jewelry box",
+     "also": [
+      "Estate jewelry page",
+      "Jewelry appraisals page",
+      "Jewelry repair page",
+      "We buy gold page"
+     ]
+    },
+    "pear_gold": {
+     "files": [
+      {
+       "file": "img/pear-gold.jpg",
+       "w": 900,
+       "h": 1126
+      }
+     ],
+     "default": "/img/pear-gold.jpg",
+     "alt": "Pear-shaped diamond solitaire in yellow gold",
+     "label": "Pear-shaped diamond solitaire in yellow gold",
+     "also": []
+    },
+    "emerald": {
+     "files": [
+      {
+       "file": "img/emerald.jpg",
+       "w": 900,
+       "h": 994
+      }
+     ],
+     "default": "/img/emerald.jpg",
+     "alt": "Emerald ring with side stones on a display stand",
+     "label": "Emerald ring with side stones on a display stand",
+     "also": []
+    },
+    "rings_hand": {
+     "files": [
+      {
+       "file": "img/rings-hand.jpg",
+       "w": 900,
+       "h": 900
+      }
+     ],
+     "default": "/img/rings-hand.jpg",
+     "alt": "Diamond rings worn on a hand",
+     "label": "Diamond rings worn on a hand",
+     "also": []
+    },
+    "bridal_wide": {
+     "files": [
+      {
+       "file": "img/bridal-wide.jpg",
+       "w": 1000,
+       "h": 619
+      }
+     ],
+     "default": "/img/bridal-wide.jpg",
+     "alt": "Engagement rings on cream display boxes at Afram's",
+     "label": "Engagement rings on cream display boxes at Afram's",
+     "also": []
+    },
+    "cat_engagement": {
+     "files": [
+      {
+       "file": "img/cat-engagement.jpg",
+       "w": 640,
+       "h": 640
+      }
+     ],
+     "default": "/img/cat-engagement.jpg",
+     "alt": "Diamond engagement ring and halo band",
+     "label": "Diamond engagement ring and halo band",
+     "also": [
+      "Engagement rings page",
+      "Jewelry page"
+     ]
+    },
+    "cat_bands": {
+     "files": [
+      {
+       "file": "img/cat-bands.jpg",
+       "w": 640,
+       "h": 640
+      }
+     ],
+     "default": "/img/cat-bands.jpg",
+     "alt": "Bridal set and gold wedding band in a ring box",
+     "label": "Bridal set and gold wedding band in a ring box",
+     "also": [
+      "Engagement rings page",
+      "Jewelry page"
+     ]
+    },
+    "cat_earrings": {
+     "files": [
+      {
+       "file": "img/cat-earrings.jpg",
+       "w": 640,
+       "h": 640
+      }
+     ],
+     "default": "/img/cat-earrings.jpg",
+     "alt": "Diamond inside-outside hoop earrings",
+     "label": "Diamond inside-outside hoop earrings",
+     "also": [
+      "Jewelry page"
+     ]
+    },
+    "cat_necklaces": {
+     "files": [
+      {
+       "file": "img/cat-necklaces.jpg",
+       "w": 640,
+       "h": 640
+      }
+     ],
+     "default": "/img/cat-necklaces.jpg",
+     "alt": "Emerald halo pendant necklace",
+     "label": "Emerald halo pendant necklace",
+     "also": [
+      "Engagement rings page",
+      "Gemstones page",
+      "Jewelry page",
+      "Seiko watches page",
+      "We buy gold page"
+     ]
+    },
+    "cat_bracelets": {
+     "files": [
+      {
+       "file": "img/cat-bracelets.jpg",
+       "w": 640,
+       "h": 640
+      }
+     ],
+     "default": "/img/cat-bracelets.jpg",
+     "alt": "Marquise diamond line bracelet",
+     "label": "Marquise diamond line bracelet",
+     "also": [
+      "Jewelry page"
+     ]
+    },
+    "cat_gemstone": {
+     "files": [
+      {
+       "file": "img/cat-gemstone.jpg",
+       "w": 640,
+       "h": 640
+      }
+     ],
+     "default": "/img/cat-gemstone.jpg",
+     "alt": "Blue gemstone two-stone ring in yellow gold",
+     "label": "Blue gemstone two-stone ring in yellow gold",
+     "also": [
+      "Engagement rings page",
+      "Jewelry page"
+     ]
+    },
+    "cat_mens": {
+     "files": [
+      {
+       "file": "img/cat-mens.jpg",
+       "w": 640,
+       "h": 640
+      }
+     ],
+     "default": "/img/cat-mens.jpg",
+     "alt": "Men's gold signet ring with a diamond halo",
+     "label": "Men's gold signet ring with a diamond halo",
+     "also": [
+      "Engagement rings page",
+      "Jewelry page"
+     ]
+    },
+    "cat_chains": {
+     "files": [
+      {
+       "file": "img/cat-chains.jpg",
+       "w": 640,
+       "h": 640
+      }
+     ],
+     "default": "/img/cat-chains.jpg",
+     "alt": "Layered gold chains",
+     "label": "Layered gold chains",
+     "also": [
+      "Jewelry page"
+     ]
+    },
+    "shape_round": {
+     "files": [
+      {
+       "file": "img/shape-round.jpg",
+       "w": 700,
+       "h": 700
+      }
+     ],
+     "default": "/img/shape-round.jpg",
+     "alt": "Round brilliant diamond engagement ring with a halo",
+     "label": "Round brilliant diamond engagement ring with a halo",
+     "also": [
+      "Diamond education page",
+      "Engagement rings page",
+      "Gemstones page",
+      "Jewelry appraisals page",
+      "Ring repair page"
+     ]
+    },
+    "gem_rings": {
+     "files": [
+      {
+       "file": "img/gem-rings.jpg",
+       "w": 1000,
+       "h": 1000
+      }
+     ],
+     "default": "/img/gem-rings.jpg",
+     "alt": "Sapphire, emerald, morganite and aquamarine rings",
+     "label": "Sapphire, emerald, morganite and aquamarine rings",
+     "also": [
+      "Diamond education page",
+      "Jewelry page",
+      "Jewelry appraisals page"
+     ]
+    },
+    "store_wide": {
+     "files": [
+      {
+       "file": "img/store-wide.jpg",
+       "w": 1200,
+       "h": 675
+      }
+     ],
+     "default": "/img/store-wide.jpg",
+     "alt": "Afram's Jewelers storefront on Airline Road in Corpus Christi",
+     "label": "Afram's Jewelers storefront on Airline Road in Corpus Christi",
+     "also": [
+      "About page",
+      "Contact page",
+      "Diamond education page",
+      "Engagement rings page",
+      "Estate jewelry page",
+      "Gemstones page",
+      "Jewelry page",
+      "Jewelry appraisals page",
+      "Jewelry repair page",
+      "Ring repair page",
+      "Seiko watches page",
+      "Watch repair page",
+      "We buy gold page"
+     ]
+    }
+   },
+   "insert_before_section": 2
+  },
+  "about": {
+   "label": "About page",
+   "html": "about/index.html",
+   "slots": {
+    "hero_about": {
+     "files": [
+      {
+       "file": "img/hero-about-1500.jpg",
+       "w": 960,
+       "h": 637
+      },
+      {
+       "file": "img/hero-about-800.jpg",
+       "w": 800,
+       "h": 531
+      }
+     ],
+     "default": "/img/hero-about-1500.jpg",
+     "alt": "The Afram family inside Afram's Jewelers",
+     "label": "The Afram family inside Afram's Jewelers",
+     "also": []
+    },
+    "joseph_afram": {
+     "files": [
+      {
+       "file": "img/joseph-afram.jpg",
+       "w": 989,
+       "h": 1293
+      }
+     ],
+     "default": "/img/joseph-afram.jpg",
+     "alt": "Joseph Malak Afram, founder of Afram's Jewelers",
+     "label": "Joseph Malak Afram, founder of Afram's Jewelers",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "contact": {
+   "label": "Contact page",
+   "html": "contact/index.html",
+   "slots": {
+    "hero_contact": {
+     "files": [
+      {
+       "file": "img/hero-contact-1500.jpg",
+       "w": 1500,
+       "h": 887
+      },
+      {
+       "file": "img/hero-contact-800.jpg",
+       "w": 800,
+       "h": 473
+      }
+     ],
+     "default": "/img/hero-contact-1500.jpg",
+     "alt": "Afram's Jewelers storefront on Airline Road in Corpus Christi",
+     "label": "Afram's Jewelers storefront on Airline Road in Corpus Christi",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "diamond-education": {
+   "label": "Diamond education page",
+   "html": "diamond-education/index.html",
+   "slots": {
+    "hero_diamond": {
+     "files": [
+      {
+       "file": "img/hero-diamond-1500.jpg",
+       "w": 1440,
+       "h": 1800
+      },
+      {
+       "file": "img/hero-diamond-800.jpg",
+       "w": 800,
+       "h": 1000
+      }
+     ],
+     "default": "/img/hero-diamond-1500.jpg",
+     "alt": "Pear-shaped diamond solitaire engagement ring",
+     "label": "Pear-shaped diamond solitaire engagement ring",
+     "also": []
+    },
+    "shape_oval": {
+     "files": [
+      {
+       "file": "img/shape-oval.jpg",
+       "w": 700,
+       "h": 700
+      }
+     ],
+     "default": "/img/shape-oval.jpg",
+     "alt": "Oval diamond engagement ring with a double halo",
+     "label": "Oval diamond engagement ring with a double halo",
+     "also": []
+    },
+    "shape_pear": {
+     "files": [
+      {
+       "file": "img/shape-pear.jpg",
+       "w": 700,
+       "h": 875
+      }
+     ],
+     "default": "/img/shape-pear.jpg",
+     "alt": "Pear-shaped diamond solitaire",
+     "label": "Pear-shaped diamond solitaire",
+     "also": []
+    },
+    "shape_emerald": {
+     "files": [
+      {
+       "file": "img/shape-emerald.jpg",
+       "w": 700,
+       "h": 700
+      }
+     ],
+     "default": "/img/shape-emerald.jpg",
+     "alt": "Emerald-cut diamond ring with a white gold band",
+     "label": "Emerald-cut diamond ring with a white gold band",
+     "also": []
+    },
+    "bridal_teal": {
+     "files": [
+      {
+       "file": "img/bridal-teal.jpg",
+       "w": 1000,
+       "h": 1000
+      }
+     ],
+     "default": "/img/bridal-teal.jpg",
+     "alt": "Diamond engagement rings on a teal background",
+     "label": "Diamond engagement rings on a teal background",
+     "also": [
+      "Gemstones page",
+      "Jewelry page",
+      "Ring repair page",
+      "Seiko watches page"
+     ]
+    },
+    "emerald_store": {
+     "files": [
+      {
+       "file": "img/emerald-store.jpg",
+       "w": 1400,
+       "h": 1547
+      }
+     ],
+     "default": "/img/emerald-store.jpg",
+     "alt": "Emerald ring on a display stand in the store",
+     "label": "Emerald ring on a display stand in the store",
+     "also": [
+      "Engagement rings page",
+      "Estate jewelry page",
+      "Gemstones page",
+      "Jewelry repair page",
+      "Ring repair page",
+      "Watch repair page",
+      "We buy gold page"
+     ]
+    }
+   },
+   "insert_before_section": 2
+  },
+  "engagement-rings": {
+   "label": "Engagement rings page",
+   "html": "engagement-rings/index.html",
+   "slots": {
+    "hero_engagement": {
+     "files": [
+      {
+       "file": "img/hero-engagement-1500.jpg",
+       "w": 1440,
+       "h": 1080
+      },
+      {
+       "file": "img/hero-engagement-800.jpg",
+       "w": 800,
+       "h": 600
+      }
+     ],
+     "default": "/img/hero-engagement-1500.jpg",
+     "alt": "Pear-shaped diamond engagement ring in a plum velvet ring box",
+     "label": "Pear-shaped diamond engagement ring in a plum velvet ring box",
+     "also": []
+    },
+    "store_cases": {
+     "files": [
+      {
+       "file": "img/store-cases.jpg",
+       "w": 900,
+       "h": 1600
+      }
+     ],
+     "default": "/img/store-cases.jpg",
+     "alt": "Engagement rings in the bridal case at Afram's Jewelers",
+     "label": "Engagement rings in the bridal case at Afram's Jewelers",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "estate-jewelry": {
+   "label": "Estate jewelry page",
+   "html": "estate-jewelry/index.html",
+   "slots": {
+    "hero_estate": {
+     "files": [
+      {
+       "file": "img/hero-estate-1500.jpg",
+       "w": 1080,
+       "h": 1920
+      },
+      {
+       "file": "img/hero-estate-800.jpg",
+       "w": 800,
+       "h": 1422
+      }
+     ],
+     "default": "/img/hero-estate-1500.jpg",
+     "alt": "Trays of vintage cameos and gemstone rings in a case at Afram's",
+     "label": "Trays of vintage cameos and gemstone rings in a case at Afram's",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "gemstones": {
+   "label": "Gemstones page",
+   "html": "gemstones/index.html",
+   "slots": {
+    "hero_gems": {
+     "files": [
+      {
+       "file": "img/hero-gems-1500.jpg",
+       "w": 1440,
+       "h": 1440
+      },
+      {
+       "file": "img/hero-gems-800.jpg",
+       "w": 800,
+       "h": 800
+      }
+     ],
+     "default": "/img/hero-gems-1500.jpg",
+     "alt": "Rings set with sapphire, emerald, morganite and aquamarine",
+     "label": "Rings set with sapphire, emerald, morganite and aquamarine",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "jewelry": {
+   "label": "Jewelry page",
+   "html": "jewelry/index.html",
+   "slots": {
+    "hero_jewelry": {
+     "files": [
+      {
+       "file": "img/hero-jewelry-1500.jpg",
+       "w": 1500,
+       "h": 1500
+      },
+      {
+       "file": "img/hero-jewelry-800.jpg",
+       "w": 800,
+       "h": 800
+      }
+     ],
+     "default": "/img/hero-jewelry-1500.jpg",
+     "alt": "Diamond and gemstone jewelry",
+     "label": "Diamond and gemstone jewelry",
+     "also": []
+    },
+    "gold_22k": {
+     "files": [
+      {
+       "file": "img/gold-22k.jpg",
+       "w": 750,
+       "h": 812
+      }
+     ],
+     "default": "/img/gold-22k.jpg",
+     "alt": "Gold necklace set in a display case at Afram's",
+     "label": "Gold necklace set in a display case at Afram's",
+     "also": []
+    },
+    "seiko_wrist": {
+     "files": [
+      {
+       "file": "img/seiko-wrist.jpg",
+       "w": 960,
+       "h": 826
+      }
+     ],
+     "default": "/img/seiko-wrist.jpg",
+     "alt": "Seiko Prospex diver watch with a green dial on a wrist",
+     "label": "Seiko Prospex diver watch with a green dial on a wrist",
+     "also": [
+      "Watch repair page"
+     ]
+    }
+   },
+   "insert_before_section": 2
+  },
+  "jewelry-appraisals": {
+   "label": "Jewelry appraisals page",
+   "html": "jewelry-appraisals/index.html",
+   "slots": {
+    "hero_appraisal": {
+     "files": [
+      {
+       "file": "img/hero-appraisal-1500.jpg",
+       "w": 1500,
+       "h": 1658
+      },
+      {
+       "file": "img/hero-appraisal-800.jpg",
+       "w": 800,
+       "h": 884
+      }
+     ],
+     "default": "/img/hero-appraisal-1500.jpg",
+     "alt": "Emerald-cut emerald ring on a display stand inside Afram's Jewelers",
+     "label": "Emerald-cut emerald ring on a display stand inside Afram's Jewelers",
+     "also": []
+    },
+    "pear_ribbon": {
+     "files": [
+      {
+       "file": "img/pear-ribbon.jpg",
+       "w": 1080,
+       "h": 1351
+      }
+     ],
+     "default": "/img/pear-ribbon.jpg",
+     "alt": "Pear-shaped diamond ring and gold bands on a burgundy ribbon",
+     "label": "Pear-shaped diamond ring and gold bands on a burgundy ribbon",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "jewelry-repair": {
+   "label": "Jewelry repair page",
+   "html": "jewelry-repair/index.html",
+   "slots": {
+    "gold_cuban": {
+     "files": [
+      {
+       "file": "img/gold-cuban.jpg",
+       "w": 960,
+       "h": 960
+      }
+     ],
+     "default": "/img/gold-cuban.jpg",
+     "alt": "Gold cuban link chains on black velvet",
+     "label": "Gold cuban link chains on black velvet",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "ring-repair": {
+   "label": "Ring repair page",
+   "html": "ring-repair/index.html",
+   "slots": {
+    "hero_rings": {
+     "files": [
+      {
+       "file": "img/hero-rings-1500.jpg",
+       "w": 1080,
+       "h": 1080
+      },
+      {
+       "file": "img/hero-rings-800.jpg",
+       "w": 800,
+       "h": 800
+      }
+     ],
+     "default": "/img/hero-rings-1500.jpg",
+     "alt": "Diamond engagement ring and gold band in a gray ring box",
+     "label": "Diamond engagement ring and gold band in a gray ring box",
+     "also": []
+    },
+    "ring_stack": {
+     "files": [
+      {
+       "file": "img/ring-stack.jpg",
+       "w": 1080,
+       "h": 1080
+      }
+     ],
+     "default": "/img/ring-stack.jpg",
+     "alt": "Rose gold bridal set with a pink center stone and stacked bands",
+     "label": "Rose gold bridal set with a pink center stone and stacked bands",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "seiko-watches": {
+   "label": "Seiko watches page",
+   "html": "seiko-watches/index.html",
+   "slots": {
+    "hero_seiko": {
+     "files": [
+      {
+       "file": "img/hero-seiko-1500.jpg",
+       "w": 1440,
+       "h": 921
+      },
+      {
+       "file": "img/hero-seiko-800.jpg",
+       "w": 800,
+       "h": 512
+      }
+     ],
+     "default": "/img/hero-seiko-1500.jpg",
+     "alt": "Seiko watches on a display stand at Afram's Jewelers",
+     "label": "Seiko watches on a display stand at Afram's Jewelers",
+     "also": []
+    },
+    "seiko_lineup": {
+     "files": [
+      {
+       "file": "img/seiko-lineup.jpg",
+       "w": 1400,
+       "h": 1000
+      }
+     ],
+     "default": "/img/seiko-lineup.jpg",
+     "alt": "Seiko Prospex Samurai, Seiko 5 Sports and two-tone Seiko dress watch",
+     "label": "Seiko Prospex Samurai, Seiko 5 Sports and two-tone Seiko dress watch",
+     "also": []
+    },
+    "seiko_turtle": {
+     "files": [
+      {
+       "file": "img/seiko-turtle.jpg",
+       "w": 700,
+       "h": 685
+      }
+     ],
+     "default": "/img/seiko-turtle.jpg",
+     "alt": "Prospex Turtle diver with a black dial and steel bracelet",
+     "label": "Prospex Turtle diver with a black dial and steel bracelet",
+     "also": [
+      "Watch repair page"
+     ]
+    },
+    "seiko_dress": {
+     "files": [
+      {
+       "file": "img/seiko-dress.jpg",
+       "w": 612,
+       "h": 612
+      }
+     ],
+     "default": "/img/seiko-dress.jpg",
+     "alt": "Two-tone Seiko dress watch with a white dial",
+     "label": "Two-tone Seiko dress watch with a white dial",
+     "also": []
+    },
+    "seiko_ladies": {
+     "files": [
+      {
+       "file": "img/seiko-ladies.jpg",
+       "w": 450,
+       "h": 600
+      }
+     ],
+     "default": "/img/seiko-ladies.jpg",
+     "alt": "Ladies' two-tone Seiko solar watch with crystals",
+     "label": "Ladies' two-tone Seiko solar watch with crystals",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  },
+  "watch-repair": {
+   "label": "Watch repair page",
+   "html": "watch-repair/index.html",
+   "slots": {},
+   "insert_before_section": 2
+  },
+  "we-buy-gold": {
+   "label": "We buy gold page",
+   "html": "we-buy-gold/index.html",
+   "slots": {
+    "hero_gold": {
+     "files": [
+      {
+       "file": "img/hero-gold-1500.jpg",
+       "w": 918,
+       "h": 960
+      },
+      {
+       "file": "img/hero-gold-800.jpg",
+       "w": 800,
+       "h": 837
+      }
+     ],
+     "default": "/img/hero-gold-1500.jpg",
+     "alt": "Gold and white gold cuban link chains on a display bust",
+     "label": "Gold and white gold cuban link chains on a display bust",
+     "also": []
+    },
+    "gold_bangles": {
+     "files": [
+      {
+       "file": "img/gold-bangles.jpg",
+       "w": 750,
+       "h": 793
+      }
+     ],
+     "default": "/img/gold-bangles.jpg",
+     "alt": "Tray of gold bangles at Afram's Jewelers",
+     "label": "Tray of gold bangles at Afram's Jewelers",
+     "also": []
+    }
+   },
+   "insert_before_section": 2
+  }
+ }
+}

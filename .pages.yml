@@ -1,0 +1,1377 @@
+media:
+  input: site/img
+  output: /img
+  path: site/img/uploads
+  extensions: [jpg, jpeg, png, webp, heic]
+content:
+  - name: settings
+    label: "Hours and banner"
+    type: file
+    path: content/settings.json
+    format: json
+    fields:
+      - name: banner
+        label: "Banner at the top of every page"
+        type: object
+        fields:
+          - name: show
+            label: "Show the banner"
+            type: boolean
+          - name: text
+            label: "Banner message"
+            description: "One short line, e.g. Closed Thanksgiving Day. Open Friday 10 to 6."
+            type: string
+      - name: hours
+        label: "Store hours"
+        description: "Changes every hours line on the site, the open-now line and Google. Untick Open for days you are closed."
+        type: object
+        fields:
+          - name: monday
+            label: Monday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: tuesday
+            label: Tuesday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: wednesday
+            label: Wednesday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: thursday
+            label: Thursday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: friday
+            label: Friday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: saturday
+            label: Saturday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+          - name: sunday
+            label: Sunday
+            type: object
+            fields:
+              - name: open
+                label: "Open"
+                type: boolean
+              - name: opens
+                label: "Opens"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+              - name: closes
+                label: "Closes"
+                type: select
+                options:
+                  values: ["5:00 AM", "5:30 AM", "6:00 AM", "6:30 AM", "7:00 AM", "7:30 AM", "8:00 AM", "8:30 AM", "9:00 AM", "9:30 AM", "10:00 AM", "10:30 AM", "11:00 AM", "11:30 AM", "12:00 PM", "12:30 PM", "1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM", "5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM"]
+  - name: page_home
+    label: "Home page"
+    type: file
+    path: content/pages/home.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: family
+            label: "The Afram's Jewelers family inside the store at Christmas"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_bridal
+            label: "Oval diamond engagement ring with a double halo"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_repair
+            label: "Ring being repaired at the bench"
+            type: object
+            description: "Also shows on: Estate jewelry page, Ring repair page, Watch repair page, We buy gold page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_sizing
+            label: "Diamond ring being polished"
+            type: object
+            description: "Also shows on: Diamond education page, Engagement rings page, Estate jewelry page, Jewelry repair page, Watch repair page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_watch
+            label: "Watch movement being repaired"
+            type: object
+            description: "Also shows on: Jewelry repair page, Seiko watches page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_appraisal
+            label: "Vintage cameo brooches"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_seiko
+            label: "Seiko 5 Sports SRPL85 automatic watch with a black dial and steel bracelet"
+            type: object
+            description: "Also shows on: Seiko watches page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: svc_gold
+            label: "Gold cuban link chains on a display bust"
+            type: object
+            description: "Also shows on: Estate jewelry page, Jewelry page, Jewelry appraisals page, Seiko watches page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: heirloom
+            label: "Gold rings resting in an open jewelry box"
+            type: object
+            description: "Also shows on: Estate jewelry page, Jewelry appraisals page, Jewelry repair page, We buy gold page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: pear_gold
+            label: "Pear-shaped diamond solitaire in yellow gold"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: emerald
+            label: "Emerald ring with side stones on a display stand"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: rings_hand
+            label: "Diamond rings worn on a hand"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: bridal_wide
+            label: "Engagement rings on cream display boxes at Afram's"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: cat_engagement
+            label: "Diamond engagement ring and halo band"
+            type: object
+            description: "Also shows on: Engagement rings page, Jewelry page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: cat_bands
+            label: "Bridal set and gold wedding band in a ring box"
+            type: object
+            description: "Also shows on: Engagement rings page, Jewelry page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: cat_earrings
+            label: "Diamond inside-outside hoop earrings"
+            type: object
+            description: "Also shows on: Jewelry page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: cat_necklaces
+            label: "Emerald halo pendant necklace"
+            type: object
+            description: "Also shows on: Engagement rings page, Gemstones page, Jewelry page, Seiko watches page, We buy gold page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: cat_bracelets
+            label: "Marquise diamond line bracelet"
+            type: object
+            description: "Also shows on: Jewelry page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: cat_gemstone
+            label: "Blue gemstone two-stone ring in yellow gold"
+            type: object
+            description: "Also shows on: Engagement rings page, Jewelry page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: cat_mens
+            label: "Men's gold signet ring with a diamond halo"
+            type: object
+            description: "Also shows on: Engagement rings page, Jewelry page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: cat_chains
+            label: "Layered gold chains"
+            type: object
+            description: "Also shows on: Jewelry page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: shape_round
+            label: "Round brilliant diamond engagement ring with a halo"
+            type: object
+            description: "Also shows on: Diamond education page, Engagement rings page, Gemstones page, Jewelry appraisals page, Ring repair page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: gem_rings
+            label: "Sapphire, emerald, morganite and aquamarine rings"
+            type: object
+            description: "Also shows on: Diamond education page, Jewelry page, Jewelry appraisals page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: store_wide
+            label: "Afram's Jewelers storefront on Airline Road in Corpus Christi"
+            type: object
+            description: "Also shows on: About page, Contact page, Diamond education page, Engagement rings page, Estate jewelry page, Gemstones page, Jewelry page, Jewelry appraisals page, Jewelry repair page, Ring repair page, Seiko watches page, Watch repair page, We buy gold page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_about
+    label: "About page"
+    type: file
+    path: content/pages/about.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_about
+            label: "The Afram family inside Afram's Jewelers"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: joseph_afram
+            label: "Joseph Malak Afram, founder of Afram's Jewelers"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_contact
+    label: "Contact page"
+    type: file
+    path: content/pages/contact.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_contact
+            label: "Afram's Jewelers storefront on Airline Road in Corpus Christi"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_diamond_education
+    label: "Diamond education page"
+    type: file
+    path: content/pages/diamond-education.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_diamond
+            label: "Pear-shaped diamond solitaire engagement ring"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: shape_oval
+            label: "Oval diamond engagement ring with a double halo"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: shape_pear
+            label: "Pear-shaped diamond solitaire"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: shape_emerald
+            label: "Emerald-cut diamond ring with a white gold band"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: bridal_teal
+            label: "Diamond engagement rings on a teal background"
+            type: object
+            description: "Also shows on: Gemstones page, Jewelry page, Ring repair page, Seiko watches page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: emerald_store
+            label: "Emerald ring on a display stand in the store"
+            type: object
+            description: "Also shows on: Engagement rings page, Estate jewelry page, Gemstones page, Jewelry repair page, Ring repair page, Watch repair page, We buy gold page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_engagement_rings
+    label: "Engagement rings page"
+    type: file
+    path: content/pages/engagement-rings.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_engagement
+            label: "Pear-shaped diamond engagement ring in a plum velvet ring box"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: store_cases
+            label: "Engagement rings in the bridal case at Afram's Jewelers"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_estate_jewelry
+    label: "Estate jewelry page"
+    type: file
+    path: content/pages/estate-jewelry.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_estate
+            label: "Trays of vintage cameos and gemstone rings in a case at Afram's"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_gemstones
+    label: "Gemstones page"
+    type: file
+    path: content/pages/gemstones.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_gems
+            label: "Rings set with sapphire, emerald, morganite and aquamarine"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_jewelry
+    label: "Jewelry page"
+    type: file
+    path: content/pages/jewelry.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_jewelry
+            label: "Diamond and gemstone jewelry"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: gold_22k
+            label: "Gold necklace set in a display case at Afram's"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: seiko_wrist
+            label: "Seiko Prospex diver watch with a green dial on a wrist"
+            type: object
+            description: "Also shows on: Watch repair page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_jewelry_appraisals
+    label: "Jewelry appraisals page"
+    type: file
+    path: content/pages/jewelry-appraisals.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_appraisal
+            label: "Emerald-cut emerald ring on a display stand inside Afram's Jewelers"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: pear_ribbon
+            label: "Pear-shaped diamond ring and gold bands on a burgundy ribbon"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_jewelry_repair
+    label: "Jewelry repair page"
+    type: file
+    path: content/pages/jewelry-repair.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: gold_cuban
+            label: "Gold cuban link chains on black velvet"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_ring_repair
+    label: "Ring repair page"
+    type: file
+    path: content/pages/ring-repair.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_rings
+            label: "Diamond engagement ring and gold band in a gray ring box"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: ring_stack
+            label: "Rose gold bridal set with a pink center stone and stacked bands"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_seiko_watches
+    label: "Seiko watches page"
+    type: file
+    path: content/pages/seiko-watches.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_seiko
+            label: "Seiko watches on a display stand at Afram's Jewelers"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: seiko_lineup
+            label: "Seiko Prospex Samurai, Seiko 5 Sports and two-tone Seiko dress watch"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: seiko_turtle
+            label: "Prospex Turtle diver with a black dial and steel bracelet"
+            type: object
+            description: "Also shows on: Watch repair page"
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: seiko_dress
+            label: "Two-tone Seiko dress watch with a white dial"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: seiko_ladies
+            label: "Ladies' two-tone Seiko solar watch with crystals"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_watch_repair
+    label: "Watch repair page"
+    type: file
+    path: content/pages/watch-repair.json
+    format: json
+    fields:
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string
+  - name: page_we_buy_gold
+    label: "We buy gold page"
+    type: file
+    path: content/pages/we-buy-gold.json
+    format: json
+    fields:
+      - name: photos
+        label: "Photos on this page"
+        description: "Upload a new photo to replace one. It is cropped to fit the same spot, so the page layout stays the same."
+        type: object
+        fields:
+          - name: hero_gold
+            label: "Gold and white gold cuban link chains on a display bust"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+          - name: gold_bangles
+            label: "Tray of gold bangles at Afram's Jewelers"
+            type: object
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: description
+                label: "What is in the photo (for Google and screen readers)"
+                type: string
+              - name: crop
+                label: "If heads or the subject get cut off, keep this part"
+                type: select
+                options:
+                  values: ["middle", "top", "bottom", "left", "right"]
+      - name: more_photos
+        label: "Add more photos to this page"
+        description: "Adds a photo section to this page, e.g. a team or group photo. Leave empty for none."
+        type: object
+        fields:
+          - name: heading
+            label: "Section heading (optional)"
+            type: string
+          - name: items
+            label: "Photos"
+            type: object
+            list:
+              max: 12
+            fields:
+              - name: photo
+                label: "Photo"
+                type: image
+              - name: caption
+                label: "Caption (optional)"
+                type: string

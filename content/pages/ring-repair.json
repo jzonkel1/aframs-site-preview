@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_rings": {
+      "photo": "/img/hero-rings-1500.jpg",
+      "description": "Diamond engagement ring and gold band in a gray ring box",
+      "crop": "middle"
+    },
+    "ring_stack": {
+      "photo": "/img/ring-stack.jpg",
+      "description": "Rose gold bridal set with a pink center stone and stacked bands",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

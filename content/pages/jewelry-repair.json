@@ -1,0 +1,13 @@
+{
+  "photos": {
+    "gold_cuban": {
+      "photo": "/img/gold-cuban.jpg",
+      "description": "Gold cuban link chains on black velvet",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

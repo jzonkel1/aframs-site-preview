@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_about": {
+      "photo": "/img/hero-about-1500.jpg",
+      "description": "The Afram family inside Afram's Jewelers",
+      "crop": "middle"
+    },
+    "joseph_afram": {
+      "photo": "/img/joseph-afram.jpg",
+      "description": "Joseph Malak Afram, founder of Afram's Jewelers",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "photos": {
+    "hero_jewelry": {
+      "photo": "/img/hero-jewelry-1500.jpg",
+      "description": "Diamond and gemstone jewelry",
+      "crop": "middle"
+    },
+    "gold_22k": {
+      "photo": "/img/gold-22k.jpg",
+      "description": "Gold necklace set in a display case at Afram's",
+      "crop": "middle"
+    },
+    "seiko_wrist": {
+      "photo": "/img/seiko-wrist.jpg",
+      "description": "Seiko Prospex diver watch with a green dial on a wrist",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

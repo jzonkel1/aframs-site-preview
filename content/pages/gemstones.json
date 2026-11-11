@@ -1,0 +1,13 @@
+{
+  "photos": {
+    "hero_gems": {
+      "photo": "/img/hero-gems-1500.jpg",
+      "description": "Rings set with sapphire, emerald, morganite and aquamarine",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

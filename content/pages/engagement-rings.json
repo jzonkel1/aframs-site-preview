@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_engagement": {
+      "photo": "/img/hero-engagement-1500.jpg",
+      "description": "Pear-shaped diamond engagement ring in a plum velvet ring box",
+      "crop": "middle"
+    },
+    "store_cases": {
+      "photo": "/img/store-cases.jpg",
+      "description": "Engagement rings in the bridal case at Afram's Jewelers",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "photos": {
+    "hero_diamond": {
+      "photo": "/img/hero-diamond-1500.jpg",
+      "description": "Pear-shaped diamond solitaire engagement ring",
+      "crop": "middle"
+    },
+    "shape_oval": {
+      "photo": "/img/shape-oval.jpg",
+      "description": "Oval diamond engagement ring with a double halo",
+      "crop": "middle"
+    },
+    "shape_pear": {
+      "photo": "/img/shape-pear.jpg",
+      "description": "Pear-shaped diamond solitaire",
+      "crop": "middle"
+    },
+    "shape_emerald": {
+      "photo": "/img/shape-emerald.jpg",
+      "description": "Emerald-cut diamond ring with a white gold band",
+      "crop": "middle"
+    },
+    "bridal_teal": {
+      "photo": "/img/bridal-teal.jpg",
+      "description": "Diamond engagement rings on a teal background",
+      "crop": "middle"
+    },
+    "emerald_store": {
+      "photo": "/img/emerald-store.jpg",
+      "description": "Emerald ring on a display stand in the store",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

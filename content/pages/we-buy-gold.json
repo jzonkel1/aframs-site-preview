@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_gold": {
+      "photo": "/img/hero-gold-1500.jpg",
+      "description": "Gold and white gold cuban link chains on a display bust",
+      "crop": "middle"
+    },
+    "gold_bangles": {
+      "photo": "/img/gold-bangles.jpg",
+      "description": "Tray of gold bangles at Afram's Jewelers",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

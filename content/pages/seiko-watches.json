@@ -1,0 +1,33 @@
+{
+  "photos": {
+    "hero_seiko": {
+      "photo": "/img/hero-seiko-1500.jpg",
+      "description": "Seiko watches on a display stand at Afram's Jewelers",
+      "crop": "middle"
+    },
+    "seiko_lineup": {
+      "photo": "/img/seiko-lineup.jpg",
+      "description": "Seiko Prospex Samurai, Seiko 5 Sports and two-tone Seiko dress watch",
+      "crop": "middle"
+    },
+    "seiko_turtle": {
+      "photo": "/img/seiko-turtle.jpg",
+      "description": "Prospex Turtle diver with a black dial and steel bracelet",
+      "crop": "middle"
+    },
+    "seiko_dress": {
+      "photo": "/img/seiko-dress.jpg",
+      "description": "Two-tone Seiko dress watch with a white dial",
+      "crop": "middle"
+    },
+    "seiko_ladies": {
+      "photo": "/img/seiko-ladies.jpg",
+      "description": "Ladies' two-tone Seiko solar watch with crystals",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

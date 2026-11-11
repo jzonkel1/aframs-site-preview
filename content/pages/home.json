@@ -1,0 +1,128 @@
+{
+  "photos": {
+    "family": {
+      "photo": "/img/family.jpg",
+      "description": "The Afram's Jewelers family inside the store at Christmas",
+      "crop": "middle"
+    },
+    "svc_bridal": {
+      "photo": "/img/svc-bridal.jpg",
+      "description": "Oval diamond engagement ring with a double halo",
+      "crop": "middle"
+    },
+    "svc_repair": {
+      "photo": "/img/svc-repair.jpg",
+      "description": "Ring being repaired at the bench",
+      "crop": "middle"
+    },
+    "svc_sizing": {
+      "photo": "/img/svc-sizing.jpg",
+      "description": "Diamond ring being polished",
+      "crop": "middle"
+    },
+    "svc_watch": {
+      "photo": "/img/svc-watch.jpg",
+      "description": "Watch movement being repaired",
+      "crop": "middle"
+    },
+    "svc_appraisal": {
+      "photo": "/img/svc-appraisal.jpg",
+      "description": "Vintage cameo brooches",
+      "crop": "middle"
+    },
+    "svc_seiko": {
+      "photo": "/img/svc-seiko.jpg",
+      "description": "Seiko 5 Sports SRPL85 automatic watch with a black dial and steel bracelet",
+      "crop": "middle"
+    },
+    "svc_gold": {
+      "photo": "/img/svc-gold.jpg",
+      "description": "Gold cuban link chains on a display bust",
+      "crop": "middle"
+    },
+    "heirloom": {
+      "photo": "/img/heirloom.jpg",
+      "description": "Gold rings resting in an open jewelry box",
+      "crop": "middle"
+    },
+    "pear_gold": {
+      "photo": "/img/pear-gold.jpg",
+      "description": "Pear-shaped diamond solitaire in yellow gold",
+      "crop": "middle"
+    },
+    "emerald": {
+      "photo": "/img/emerald.jpg",
+      "description": "Emerald ring with side stones on a display stand",
+      "crop": "middle"
+    },
+    "rings_hand": {
+      "photo": "/img/rings-hand.jpg",
+      "description": "Diamond rings worn on a hand",
+      "crop": "middle"
+    },
+    "bridal_wide": {
+      "photo": "/img/bridal-wide.jpg",
+      "description": "Engagement rings on cream display boxes at Afram's",
+      "crop": "middle"
+    },
+    "cat_engagement": {
+      "photo": "/img/cat-engagement.jpg",
+      "description": "Diamond engagement ring and halo band",
+      "crop": "middle"
+    },
+    "cat_bands": {
+      "photo": "/img/cat-bands.jpg",
+      "description": "Bridal set and gold wedding band in a ring box",
+      "crop": "middle"
+    },
+    "cat_earrings": {
+      "photo": "/img/cat-earrings.jpg",
+      "description": "Diamond inside-outside hoop earrings",
+      "crop": "middle"
+    },
+    "cat_necklaces": {
+      "photo": "/img/cat-necklaces.jpg",
+      "description": "Emerald halo pendant necklace",
+      "crop": "middle"
+    },
+    "cat_bracelets": {
+      "photo": "/img/cat-bracelets.jpg",
+      "description": "Marquise diamond line bracelet",
+      "crop": "middle"
+    },
+    "cat_gemstone": {
+      "photo": "/img/cat-gemstone.jpg",
+      "description": "Blue gemstone two-stone ring in yellow gold",
+      "crop": "middle"
+    },
+    "cat_mens": {
+      "photo": "/img/cat-mens.jpg",
+      "description": "Men's gold signet ring with a diamond halo",
+      "crop": "middle"
+    },
+    "cat_chains": {
+      "photo": "/img/cat-chains.jpg",
+      "description": "Layered gold chains",
+      "crop": "middle"
+    },
+    "shape_round": {
+      "photo": "/img/shape-round.jpg",
+      "description": "Round brilliant diamond engagement ring with a halo",
+      "crop": "middle"
+    },
+    "gem_rings": {
+      "photo": "/img/gem-rings.jpg",
+      "description": "Sapphire, emerald, morganite and aquamarine rings",
+      "crop": "middle"
+    },
+    "store_wide": {
+      "photo": "/img/store-wide.jpg",
+      "description": "Afram's Jewelers storefront on Airline Road in Corpus Christi",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

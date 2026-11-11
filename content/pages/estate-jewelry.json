@@ -1,0 +1,13 @@
+{
+  "photos": {
+    "hero_estate": {
+      "photo": "/img/hero-estate-1500.jpg",
+      "description": "Trays of vintage cameos and gemstone rings in a case at Afram's",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "photos": {
+    "hero_appraisal": {
+      "photo": "/img/hero-appraisal-1500.jpg",
+      "description": "Emerald-cut emerald ring on a display stand inside Afram's Jewelers",
+      "crop": "middle"
+    },
+    "pear_ribbon": {
+      "photo": "/img/pear-ribbon.jpg",
+      "description": "Pear-shaped diamond ring and gold bands on a burgundy ribbon",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}

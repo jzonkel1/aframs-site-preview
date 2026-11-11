@@ -1,0 +1,13 @@
+{
+  "photos": {
+    "hero_contact": {
+      "photo": "/img/hero-contact-1500.jpg",
+      "description": "Afram's Jewelers storefront on Airline Road in Corpus Christi",
+      "crop": "middle"
+    }
+  },
+  "more_photos": {
+    "heading": "",
+    "items": []
+  }
+}
